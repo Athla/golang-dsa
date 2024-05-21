@@ -1,6 +1,6 @@
 package lc
 
-func containsDuplicate(nums []int) bool {
+func ContainsDuplicate(nums []int) bool {
 	m := make(map[int]struct{})
 
 	if len(nums) <= 1 {

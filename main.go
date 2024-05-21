@@ -2,21 +2,12 @@ package main
 
 import (
 	"fmt"
+
+	lc "github.com/Athla/golang-dsa/LC"
 )
 
 func main() {
-	maze := []string{
-		"#######",
-		"#     #",
-		"# ### #",
-		"# #   #",
-		"# ### #",
-		"#     #",
-		"#######",
-	}
-	wall := "#"
-	start := Point{1, 1}
-	end := Point{5, 5}
-	path := Solve(maze, wall, start, end)
-	fmt.Println("Path:", path)
+	var nums []int = []int{1, 2, 3, 1}
+	fmt.Println(lc.ContainsDuplicate(nums))
+
 }
