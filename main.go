@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	var nums []int = []int{1, 2, 3, 1}
-	fmt.Println(lc.ContainsDuplicate(nums))
+	nums := []int{2, 7, 11, 15}
+	target := 9
+	fmt.Println(lc.TwoSum(nums, target))
 
 }
