@@ -2,13 +2,9 @@ package main
 
 import (
 	"fmt"
-
-	lc "github.com/Athla/golang-dsa/LC"
+	// lc "github.com/Athla/golang-dsa/LC"
 )
 
 func main() {
-	nums := []int{2, 7, 11, 15}
-	target := 9
-	fmt.Println(lc.TwoSum(nums, target))
-
+	fmt.Println("Run the leetcodes here, just add the test case + the function defined at the LC package and validate it.")
 }
