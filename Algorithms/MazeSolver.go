@@ -1,4 +1,4 @@
-package main
+package algorithms
 
 var dir = [][]int{
 	{-1, 0},

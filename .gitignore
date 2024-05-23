@@ -26,4 +26,8 @@ go.work
 
 # End of https://www.toptal.com/developers/gitignore/api/go
 
-kata
+node_modules
+./ligma.config.js
+dist
+stats.json
+
