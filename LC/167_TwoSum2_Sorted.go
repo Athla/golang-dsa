@@ -3,13 +3,14 @@ package lc
 func twoSum(numbers []int, target int) []int {
 	top := len(numbers) - 1
 	bot := 0
-
+	sum := 0
 	for bot < top {
-		if numbers[bot]+numbers[top] == target {
+		sum = numbers[bot] + numbers[top]
+		if sum == target {
 			return []int{bot, top}
-		} else if numbers[bot] > target {
+		} else if sum > target {
 			bot++
-		} else if numbers[top] < target {
+		} else if sum < target {
 			top--
 		}
 	}
