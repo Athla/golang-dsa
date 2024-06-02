@@ -5,8 +5,12 @@ import (
 	"strings"
 )
 
+// Sort the current strings in a lambda function (sortString)
+// iter over the slice of strings, sorting them and adding the sorted result to the hashmap that group same words
+// iter over grouped hashmap, adding the elements (anagrams) to the answer output, unpacking elements, returning then in the answer
 func GroupAnagrams(strs []string) [][]string {
 	groups := make(map[string][]string)
+
 	sortString := func(s string) string {
 		splited := strings.Split(s, "")
 		slices.Sort(splited)

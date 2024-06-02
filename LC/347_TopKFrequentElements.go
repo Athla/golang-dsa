@@ -1,19 +1,23 @@
 package lc
 
+// TopKFrequent finds the k most frequent elements in nums.
+// It uses a map to count the frequency of each element and a slice of slices to group elements by frequency.
+// Finally, it constructs the result by iterating from the highest frequency to the lowest until k elements are collected.
+
 func TopKFrequent(nums []int, k int) (res []int) {
-	countMap := map[int]int{}
+	countFrequency := map[int]int{}
 	countSlice := make([][]int, len(nums)+1)
 
 	for _, n := range nums {
-		if count, ok := countMap[n]; ok {
-			countMap[n] = count + 1
+		if count, ok := countFrequency[n]; ok {
+			countFrequency[n] = count + 1
 		} else {
-			countMap[n] = 1
+			countFrequency[n] = 1
 		}
 
 	}
 
-	for num, count := range countMap {
+	for num, count := range countFrequency {
 		countSlice[count] = append(countSlice[count], num)
 	}
 

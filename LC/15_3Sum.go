@@ -2,6 +2,8 @@ package lc
 
 import "sort"
 
+// After picking the first number, implment ordered two sum, using two pointers to find the solution.
+// It's a O(N^2) solution in worst case scenario
 func Threesum(nums []int) (res [][]int) {
 	sort.Ints(nums)
 	var sum int

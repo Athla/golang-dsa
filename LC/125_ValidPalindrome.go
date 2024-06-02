@@ -2,6 +2,7 @@ package lc
 
 import "unicode"
 
+// To solve used a two pointer approach, scanning the array and moving pointers while they're valid. If scan == complete -> valid, else invalid
 func isPalindrome(s string) bool {
 	end := len(s) - 1
 	start := 0

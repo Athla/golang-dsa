@@ -1,5 +1,6 @@
 package lc
 
+// Use a stack to keep track of the values, comparing them
 func isValid(s string) bool {
 	valid := map[byte]byte{'}': '{', ']': '[', ')': '('}
 
